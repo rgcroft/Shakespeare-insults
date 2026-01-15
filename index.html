@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakespeare's Insult Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚔️ Shakespeare's Insult Generator 🗡️</h1>
+            <p class="subtitle">A Grand Treasury of Shakespearean Insults</p>
+        </header>
+
+        <main>
+            <div class="controls">
+                <div class="category-selector">
+                    <label for="category">Choose thy category of insult:</label>
+                    <select id="category">
+                        <option value="random">Random (Any Category)</option>
+                        <option value="personal">Personal Attributes/Traits</option>
+                        <option value="intellect">Intellect</option>
+                        <option value="rogues">Rogues</option>
+                        <option value="knaves">Knaves</option>
+                        <option value="villains">Villains</option>
+                        <option value="traitors">Traitors</option>
+                        <option value="fiends">Fiends</option>
+                        <option value="fools">Fools & Rascals</option>
+                        <option value="creatures">Creatures</option>
+                        <option value="animals">Animals (Dogs, Toads, Birds, etc.)</option>
+                        <option value="disease">Disease</option>
+                        <option value="bodily">Bodily Qualities</option>
+                        <option value="bodyparts">Body Parts & Functions</option>
+                        <option value="food">Food & Drink</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="individuals">Types of Individuals</option>
+                        <option value="objects">Inanimate Objects</option>
+                    </select>
+                </div>
+
+                <button id="generateBtn" class="generate-btn">Generate Insult</button>
+            </div>
+
+            <div id="insultDisplay" class="insult-display">
+                <div class="insult-text" id="insultText">Click "Generate Insult" to begin!</div>
+                <div class="play-citation" id="playCitation"></div>
+                <div class="category-tag" id="categoryTag"></div>
+            </div>
+
+            <div class="action-buttons" id="actionButtons">
+                <button id="tryAgainBtn" class="secondary-btn">Try Another</button>
+                <button id="copyBtn" class="secondary-btn">Copy to Clipboard</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>All insults sourced from the plays of William Shakespeare</p>
+            <p class="teacher-credit">Created by Ryan Miller | <a href="https://ryanmio.github.io" target="_blank">More Educational Tools</a></p>
+        </footer>
+    </div>
+
+    <script src="insults-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
